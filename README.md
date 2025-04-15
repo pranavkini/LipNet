@@ -6,8 +6,8 @@ LipNet is a deep learning-based model for lip reading that takes video frames of
 
 ```
 ├── LipNet.ipynb        # Jupyter Notebook containing the complete pipeline
-├── data/               # Folder for video samples and alignment data (not included here)
-├── models/             # Trained model weights (if saved separately)
+├── data/               # Folder for video samples and alignment data 
+├── models/             # Trained model weights 
 ```
 
 ## 🚀 Features
