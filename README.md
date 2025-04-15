@@ -8,7 +8,6 @@ LipNet is a deep learning-based model for lip reading that takes video frames of
 ├── LipNet.ipynb        # Jupyter Notebook containing the complete pipeline
 ├── data/               # Folder for video samples and alignment data (not included here)
 ├── models/             # Trained model weights (if saved separately)
-├── utils/              # Preprocessing and data loading helpers
 ```
 
 ## 🚀 Features
@@ -25,15 +24,7 @@ LipNet is a deep learning-based model for lip reading that takes video frames of
 - TensorFlow 2.x
 - NumPy
 - OpenCV
-- `scikit-learn`
 - `matplotlib`
-- `editdistance` (for evaluation)
-
-Install dependencies via pip:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## 📦 Dataset
 
@@ -47,16 +38,6 @@ The training pipeline involves:
 - Training the LipNet model with CTC loss
 - Evaluating using word error rate (WER) and character error rate (CER)
 
-## 🖥️ Inference
-
-To run inference on a new video:
-
-```python
-video = load_and_preprocess_video('path/to/video')
-prediction = model.predict(video)
-decoded = ctc_decode(prediction)
-print(decoded)
-```
 
 ## 📚 References
 
